@@ -23,7 +23,21 @@
 <section class="filterbar section-small"><button class="filter active" data-filter="all">همه</button><button class="filter" data-filter="spice">ادویه‌ها</button><button class="filter" data-filter="legume">حبوبات</button></section>
 <section id="spices" class="section-small category-heading"><span>SPICES + LEGUMES</span><h2>مجموعه محصولات</h2><p>ادویه‌ها: ۴۵ و ۸۰ گرم &nbsp; | &nbsp; حبوبات: ۴۵۰ و ۸۰۰ گرم</p></section>
 <section id="productGrid" class="product-grid product-grid-large section-small"></section>
-<section class="section catalog-strip"><div><div class="section-kicker">SARV / SALES CATALOG</div><h2>کاتالوگ فروش</h2><p>لینک PDF یا فایل کاتالوگ را بعداً در این دو دکمه قرار بده.</p></div><div class="catalog-actions"><a class="catalog-link" href="CATALOG_LEGUMES_URL">کاتالوگ حبوبات ↗</a><a class="catalog-link" href="CATALOG_SPICES_URL">کاتالوگ ادویه ↗</a></div></section>
+<div class="product-modal" id="productModal" aria-hidden="true">
+  <div class="product-modal-backdrop" data-close-product></div>
+  <article class="product-modal-card" role="dialog" aria-modal="true" aria-labelledby="modalProductTitle">
+    <button class="product-modal-close" type="button" data-close-product aria-label="بستن">×</button>
+    <div class="modal-product-media"><img id="modalProductImage" src="" alt=""></div>
+    <div class="modal-product-copy">
+      <span class="modal-kicker" id="modalProductEnglish"></span>
+      <h2 id="modalProductTitle"></h2>
+      <p class="modal-lead" id="modalProductDescription"></p>
+      <div class="modal-facts" id="modalProductFacts"></div>
+      <div class="modal-actions"><a id="modalShopLink" class="btn btn-dark" href="https://sarvco.mydigify.app" target="_blank" rel="noopener">سفارش محصول ↗</a><button class="btn btn-outline" type="button" data-close-product>بستن</button></div>
+    </div>
+  </article>
+</div>
+<section class="section catalog-strip"><div><div class="section-kicker">SARV / SALES CATALOG</div><h2>کاتالوگ فروش</h2><p>کاتالوگ‌های فروش سرو را برای مشاهده مشخصات و انتخاب محصول دریافت کنید.</p></div><div class="catalog-actions"><a class="catalog-link" href="CATALOG_LEGUMES_URL">کاتالوگ حبوبات ↗</a><a class="catalog-link" href="CATALOG_SPICES_URL">کاتالوگ ادویه ↗</a></div></section>
 <section class="cta section"><div class="cta-inner"><span class="eyebrow">SARV SHOP</span><h2>برای خرید تکی یا فروشگاهی وارد فروشگاه شوید.</h2><a class="btn btn-light" href="https://sarvco.mydigify.app" target="_blank" rel="noopener">ورود به فروشگاه ↗</a></div></section></main><footer class="footer">
   <div><div class="brand footer-brand"><span class="brand-mark">س</span><span class="brand-word">SARV</span></div>
     <p data-fa="لذت کیفیت و اصالت، در هر دانه." data-en="The pleasure of quality and authenticity, in every grain.">لذت کیفیت و اصالت، در هر دانه.</p></div>
